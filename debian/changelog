@@ -1,4 +1,11 @@
-synaptic (0.84.3linuxmint1+tara) tara; urgency=medium
+synaptic (0.84.3linuxmint2) tricia; urgency=medium
+
+  [ JosephMcc ]
+  * error-dialogs: Fix the default height (#16)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 25 Nov 2019 17:29:40 +0000
+
+synaptic (0.84.3linuxmint1) tara; urgency=medium
 
   * Don't show upgrade features
   * Add support for window-progress
