@@ -1,6 +1,6 @@
 /* sections_trans.cc - translate debian sections into friendlier names
- *  (c) 2004 Michael Vogt 
- *  
+ *  (c) 2004 Michael Vogt
+ *
  */
 
 #include <libintl.h>
@@ -52,6 +52,8 @@ const char *transtable[][2] = {
    {"interpreters", _("Interpreted Computer Languages")},
    // TRANSLATORS: Alias for the Debian package section "java"
    {"java", _("Java Programming Language")},
+   // TRANSLATORS: Alias for the Debian package section "javascript"
+   {"javascript", _("JavaScript Programming Language")},
    // TRANSLATORS: Alias for the Debian package section "KDE"
    {"kde", _("KDE Desktop Environment")},
    // TRANSLATORS: Alias for the Debian package section "kernel"
@@ -88,6 +90,8 @@ const char *transtable[][2] = {
    {"python", _("Python Programming Language")},
    // TRANSLATORS: Alias for the Debian package section "ruby"
    {"ruby", _("Ruby Programming Language")},
+   // TRANSLATORS: Alias for the Debian package section "rust"
+   {"rust", _("Rust Programming Language")},
    // TRANSLATORS: Alias for the Debian package section "science"
    {"science", _("Science")},
    // TRANSLATORS: Alias for the Debian package section "shells"
@@ -155,7 +159,7 @@ string trans_section(string sec)
       str = _("Restricted On Export");
       suffix = _("contrib");
    }
-   // if we have something like "contrib/web", make "contrib" the 
+   // if we have something like "contrib/web", make "contrib" the
    // suffix and translate it independently
    string::size_type n = str.find("/");
    if (n != string::npos) {

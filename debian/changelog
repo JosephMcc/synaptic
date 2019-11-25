@@ -1,37 +1,116 @@
-synaptic (0.83linuxmint4) sylvia; urgency=medium
+synaptic (0.84.3linuxmint1+tara) tara; urgency=medium
 
-  [ muzena ]
-  * Add Cinnamon and Mate DE in manual
-
-  [ Clement Lefebvre ]
+  * Don't show upgrade features
   * Add support for window-progress
+  * Added patches for Linux Mint and build server (which runs Debian)
 
- -- Clement Lefebvre <root@linuxmint.com>  Sat, 04 Nov 2017 12:44:46 +0000
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 May 2018 11:24:10 +0100
 
-synaptic (0.83linuxmint3) sarah; urgency=medium
+synaptic (0.84.3ubuntu1) bionic; urgency=medium
 
-  * Don't color the search entry in yellow when performing a search
+  * No change rebuild for launchpad translations import
 
- -- Clement Lefebvre <root@linuxmint.com>  Fri, 24 Jun 2016 20:04:03 +0100
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 29 Mar 2018 17:25:28 +0200
 
-synaptic (0.83linuxmint2) sarah; urgency=medium
+synaptic (0.84.3) unstable; urgency=medium
 
-  [ monsta ]
-  * Fix notebook expanding in the properties window
+  [ gogogogi ]
+  * Update Synaptic version
+
+  [ Jose A. Múrcia ]
+  * Update ca@valencia.po
+
+  [ hugo ]
+  * Fixed a small inconsistency in fr.po
+
+  [ Michael Vogt ]
+  * fix user-mode synaptic to not crash under wayland
+  * add some more things to gitignore
+
+  [ Brahim Djoudi ]
+  * Removal of empty declarations
+
+  [ Olivier Humbert ]
+  * Update the French translation
+  * Update fr.po
+
+  [ AsciiWolf ]
+  * Update Czech translation
+
+  [ Gunnar Hjalmarsson ]
+  * Fix missing closing b tag in german translation
+  * Strip translations in Ubuntu
+  * Reverse fix of do missing closing b tag in po.de
+
+  [ Tobias Bannert ]
+  * Updated german translation
+
+ -- Michael Vogt <mvo@ubuntu.com>  Sun, 18 Mar 2018 21:50:39 +0100
+
+synaptic (0.84.2) unstable; urgency=medium
+
+  [ Simon McVittie ]
+  * Depend on policykit-1 instead of recommending
+    gksu|kdebase-bin|policykit-1. data/synaptic.desktop.in and
+    debian/synaptic.menu both use debian/synaptic-pkexec, which
+    unconditionally runs pkexec. (Closes: #856520)
+  * Pushing the recommendation up to a Depends ensures that the menu entry
+    can in fact be launched (Closes: #415408)
+
+ -- Michael Vogt <mvo@debian.org>  Thu, 09 Mar 2017 16:28:15 +0100
+
+synaptic (0.84.1) unstable; urgency=medium
+
+  [ Vadim Kalmakov ]
+  * updated ru.po translation
+
+  [ Michael Vogt ]
+  * revert back to use http for changelogs
+    (thanks to Viktor Jägersküpper)
+
+ -- Michael Vogt <mvo@debian.org>  Fri, 06 Jan 2017 22:22:49 +0100
+
+synaptic (0.84) unstable; urgency=medium
+
+  [ Michael Vogt ]
+  * Fix build with gcc6.
+    Thanks to Martin Michlmayer (Closes: #811857)
+  * Use GtkSearchEntry widget for the quick-filter
+  * Fix polish translation of 'Newsgroups' (Closes: 810152)
+  * po/sv.po: updated Swedish translation.
+    Thanks to Anders Jonsson (Closes: 793597)
 
   [ muzena ]
-  * Make croatian manual, translate hr.po, add manual-po hr.po file, add synaptic.hr.8 files, updates rules and rules.debian man lines to build all locale manpages, fix developers-references links in all manuals, add/fix missing Tabs in the properties dialog in croatian and english manuals, update new screenshots in english manual, add/fix missing categories to Category Selector in croatian and english manuals.
+  * Make croatian manual, translate hr.po... 
 
-  [ Clement Lefebvre ]
-  * Improved translations for a few languages (DE, FR, ES, IT)
+  [ rezso ]
+  * Update Hungarian translation
 
- -- Clement Lefebvre <root@linuxmint.com>  Wed, 22 Jun 2016 16:53:12 +0100
+  [ Jonathan ]
+  * Use https instead of http for links
+  * Fixed typos and conventions
 
-synaptic (0.83linuxmint1) sarah; urgency=medium
+  [ devel ]
+  * Added treeview-fetch expand to windows_fetch.ui.
+  * Fix "99synaptic" path using FindDir.
 
-  * Sarah
+  [ Antonio Cebrián ]
+  * Fixed typo in path
 
- -- Clement Lefebvre <root@linuxmint.com>  Mon, 16 May 2016 11:46:11 +0100
+  [ Phil Miller ]
+  * Set debconf/apt-listchanges to gtk in terminal frontend (Closes: #422427)
+
+  [ Sergey Alyoshin ]
+  * Add "Visit Homepage" tooltip to translation (Closes: #701666)
+  * Updated Russian man-page (Closes: #721378)
+
+  [ Josh Triplett ]
+  * Add sections for Rust and JavaScript
+
+  [ Anders Jonsson ]
+  * [intl:SV] updated Swedish translation (closes: #793597)
+
+ -- Michael Vogt <mvo@debian.org>  Thu, 05 Jan 2017 11:33:54 +0100
 
 synaptic (0.83) unstable; urgency=medium
 
